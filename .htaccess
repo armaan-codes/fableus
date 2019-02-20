@@ -1,0 +1,22 @@
+#AddHandler application/x-httpd-php56 .php
+
+#<FilesMatch "^/resource/.+\.(js|css|jpg|jpeg|png|gif)$">
+#Header set Cache-Control "max-age=604800, public"
+#</FilesMatch>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+	
+	 RewriteCond %{REQUEST_FILENAME} !\.(woff2|woff|eot|ttf|svg|jpg|gif|png|css|js|txt|ico|pdf|min\.map)$ [NC]
+	
+    RewriteRule ^(.*)$ index.php [PT,L]
+</IfModule>
+
+# File modified on Sat Jul  1 02:52:58 2017 by server
+# For security reasons, mod_php is not used on this server. Use a php.ini file for php directives
+# php_value output_handler ob_gzhandler
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>

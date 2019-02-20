@@ -1,0 +1,14 @@
+/* SECTION */
+.section {
+	padding: 35px 0;
+	@include respond-to(xs) {
+		padding: 20px 0;
+	}
+}
+.section-no-pt {
+	padding: 0 0 35px 0;
+}
+.section-xs {
+	padding: 15px 0;
+}
+

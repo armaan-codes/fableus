@@ -1,0 +1,89 @@
+/* STICKY BOTTOM */
+
+.sticky-bottom-holder {
+	border-top: 1px solid $gray;
+	padding: 12px 0;
+	background: $white;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: 800;	
+	//height: 450px;
+	overflow-y: scroll;
+	@include transition(250ms);
+	transform: translate3d(0px, calc(100% - 61px), 0px);
+	@include respond-to(xs) {
+		transform: translate3d(0px, calc(100% - 55px), 0px);
+	}
+	&.open {
+		transform: translate3d(0px, 0px, 0px);
+		.hide-when-open {
+			display: none;
+		}
+	}
+}
+
+.sticky-bottom-trigger {
+	text-align: center;
+	display: inline-block;
+	color: $gray;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-family: $proxima-font-light;
+	min-width: 90px;
+	&.active {
+		>i {
+			&:before {
+				@extend .fa-chevron-down;
+			}
+		}
+	}
+	>i {
+		display: block;
+		font-size: 16px;
+	}
+}
+
+.btn-vote {
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: $mercury;
+	text-align: center;
+	line-height: 60px;
+	color: $white;
+	float: left;
+	margin-top: -12px;
+	margin-bottom: -12px;
+}
+
+.upvote-holder {
+	display: block;
+	@include clearfix();
+	background: $mercury;
+	padding: 20px 25px;
+	margin-bottom: -12px;
+	font-size: 16px;
+	font-family: $proxima-font-semibold;
+	font-weight: 600;
+	text-transform: uppercase;
+	@include respond-to(xs) {
+		padding: 10px 15px;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	&:hover {
+		>i {
+			color: $info-color;
+		}
+	}
+	>i {
+		float: right;
+		color: $white;
+		margin-top: 4px;
+	}
+}
+
+
+

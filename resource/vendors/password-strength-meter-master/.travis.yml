@@ -1,0 +1,31 @@
+language: node_js
+node_js:
+- '6'
+
+git:
+  depth: 1
+
+branches:
+  except:
+  - gh-pages
+
+addons:
+  sauce_connect: true
+
+cache:
+  yarn: true
+
+install:
+- npm install -g yarn
+
+before_script:
+- yarn install
+- yarn add codecov -g
+
+script:
+- yarn test
+
+after_success:
+- cat coverage/*/lcov.info > coverage/lcov.info
+- codecov
+- if [ $TRAVIS_BRANCH = 'master' ]; then sh build.sh; fi

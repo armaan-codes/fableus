@@ -1,0 +1,1 @@
+Simple application designed to act like a forum for expanding essay topics.

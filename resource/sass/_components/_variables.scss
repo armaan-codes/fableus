@@ -1,0 +1,60 @@
+/* VARIABLES */
+
+/************************* 
+	Fonts variable
+*************************/
+/*Proxima fonts*/
+$proxima-font-light: 'ProximaNovaLt';
+$proxima-font-regular: 'ProximaNovaRg';
+$proxima-font-semibold: 'ProximaNovaLt';
+$proxima-font-bold: 'ProximaNovaBold';
+$proxima-font-bold-a: 'ProximaNovaAltRg';
+
+/* ACaslonPro fonts */
+$acaslonpro-font-regular: 'AdobeCaslonPro-regular';
+$acaslonpro-font-italic: 'AdobeCaslonPro-italic';
+$acaslonpro-font-semibold: 'AdobeCaslonPro-semibold';
+$acaslonpro-font-semibold-italic: 'AdobeCaslonPro-semibold-italic';
+$acaslonpro-font-bold-italic: 'AdobeCaslonPro-bold-italic';
+$acaslonpro-font-bold: 'AdobeCaslonPro-bold';
+
+$main-font: $proxima-font-regular;
+/************************* 
+	Body variable
+*************************/
+$body-main-text-color: $main-text-color;
+$body-main-font: $main-font;
+$body-font-size: 14px;
+$body-bg: $wild-sand;
+
+/************************* 
+	Links color variable
+*************************/
+$link-color: $info-color;
+
+
+/************************* 
+	Title color variable
+*************************/
+$title-font: $acaslonpro-font-regular;
+$title-font-bold: $acaslonpro-font-bold;
+$title-color: $black;
+/************************* 
+	Sections variable
+*************************/
+/* Nav variables */
+$nav-bg: $white;
+
+/* Footer variables */
+$footer-bg: $white;
+
+/* Form variables */
+$placeholder-color: $gray;
+$placeholder-italic: italic;
+$placeholder-regular: normal;
+$placeholder-opacity: 0;
+
+/* Font PATH */
+$font-path: '../fonts/';
+
+

@@ -1,0 +1,25 @@
+/* COLLAPSE */
+
+.collapse-text-holder {
+	margin-bottom: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 60px;
+	&.open {
+		height: auto;
+		overflow: visible;
+		text-overflow: none;
+	}
+}
+
+.read-more-holder {
+	float: left;
+	&.active {
+		.btn-go-to-story {
+			display: block;
+		}
+	}
+	.btn-go-to-story {
+		display: none;
+	}
+}

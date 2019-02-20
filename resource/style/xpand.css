@@ -1,0 +1,582 @@
+
+/* ===========================
+   ======= Body style ========
+   =========================== */
+
+body {
+	background-image: url('/resource/img/bg.png');
+	color: #000305;
+	font-size: 87.5%; /* Base font size: 14px */
+	font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	line-height: 1.429;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	}
+
+.body {
+	clear: both;
+	margin: 0 auto;
+	width: 70%;
+}
+
+/* ===========================
+   ========= Headings ========
+   =========================== */
+h2 {font-size: 1.571em}	/* 22px */
+h3 {font-size: 1.429em}	/* 20px */
+h4 {font-size: 1.286em}	/* 18px */
+h5 {font-size: 1.143em}	/* 16px */
+h6 {font-size: 1em}		/* 14px */
+
+h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	line-height: 1.1;
+	margin-bottom: .8em;
+}
+
+
+/* ===========================
+   ===== Main Navigation =====
+   =========================== */
+
+.mainHeader {
+	padding: 5px 0px 0px 0px;
+}
+.mainHeader nav {
+	background: #666;
+	font-size: 1.143em;
+	height: 40px;
+	line-height: 30px;
+	margin: 0 auto 30px auto;
+	text-align: center;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.mainHeader nav ul {
+	list-style: none;
+	margin: 0 auto;
+}
+
+.search {
+	text-align: center;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.mainHeader nav ul li {
+	float: left;
+	display: inline;
+}
+
+.mainHeader nav a:link, .mainHeader nav a:visited {
+	color: #fff;
+	display: inline-block;
+	height: 30px;
+	padding: 5px 23px;
+	text-decoration: none;
+}
+.mainHeader nav a:hover, .mainHeader nav a:active,
+.mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+	background: #CF5C3F;
+	color: #fff;
+	text-shadow: none !important;
+}
+
+.mainHeader nav li a {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.mainHeader img {
+	width: 30%;
+	height: auto;
+	margin: 3% 0;
+}
+
+/* ===========================
+   ======= Content Area ======
+   =========================== */
+
+.mainContent {
+	overflow: hidden;
+	line-height: 25px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.topcontent {
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 3% 5%;
+	margin-bottom: 3%;
+}
+
+.middlecontent {
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 3% 5%;
+	margin-bottom: 3%;
+}
+
+.bottomcontent {
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 3% 5%;
+}
+
+.content {
+	width: 100%;
+	float: left;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.center-content {
+	background-color: #FFF;
+	width: 60%;
+	float: left;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin: 5px 5px;
+}
+
+.leftside-content {
+	background-color: #FFF;
+	width: 25%;
+	float: left;
+	border-radius: 15px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin: 5px 5px;
+	/*overflow: auto;*/
+}
+
+.rightside-content {
+	background-color: #FFF;
+	width: 15%;
+	float: right;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin: 5px 5px;
+}
+
+h2 span{
+   color: white;
+   font: bold 24px/45px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
+
+.toc {
+	text-align: center;
+}
+
+.rightsideHeading {
+	text-align: center;
+}
+
+.post-info {
+	font-style: italic;
+	color: #999;
+	font-size: 85%;
+}
+
+.imageOwner {
+    width: 25px;
+    height: 25px;
+    background-position: 50%;
+    border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+    //background-image: url("/resource/img/logo.gif");
+    background-color: #F5F5DC;
+    text-align: center;
+}
+
+.imageContrib {
+    width: 25px;
+    height: 25px;
+    background-position: 50%;
+    border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+    //background-image: url("/resource/img/logo.gif");
+    background-color: #F0FFFF;
+    text-align: center;
+}
+
+.imageReader {
+    width: 25px;
+    height: 25px;
+    background-position: 50%;
+    border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+    //background-image: url("/resource/img/logo.gif");
+    background-color: #DCDCDC;
+    text-align: center;
+}
+
+.imagePublic {
+    width: 25px;
+    height: 25px;
+    background-position: 50%;
+    border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+    //background-image: url("/resource/img/logo.gif");
+    background-color: #F8F8FF;
+    text-align: center;
+}
+
+.user {
+    width: 30px;
+    height: 30px;
+    background-position: 50%;
+    border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+    //background-image: url("/resource/img/logo.gif");
+    background-color: #F8F8FF;
+    text-align: center;
+    align: left
+    color:transparent;;
+	text-shadow:none;
+	border:none;
+	box-shadow:none;
+}
+
+.userActivity {
+    width: 25px;
+    height: 25px;
+    background-position: 50%;
+    border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+    //background-image: url("/resource/img/`logo.gif");
+    background-color: #F8F8FF;
+    text-align: center;
+    align: left
+}
+
+.storyContainer {
+	width: 100%;
+}
+
+.roundTD {
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+/*  Define the background color for all the ODD background rows  */
+.storyContainer .storyRow:nth-child(odd){
+	background: #b8d1f3;
+}
+/*  Define the background color for all the EVEN background rows  */
+.storyContainer .storyRow:nth-child(even){
+	background: #dae5f4;
+}
+
+.title-info {
+}
+
+.nonTitle-info {
+	width: 100%;
+	font-style: italic;
+	color: #999;
+	font-size: 85%;
+}
+
+.timeStamp {
+    text-align: left
+}
+
+.plot-title{
+	width: 100%;
+	font-style: regular;
+	font-size: 100%;
+	text-align: left;
+	height: 60px;
+}
+
+.plot-body {
+	width: 100%;
+	font-style: regular;
+	font-size: 100%;
+	text-align: left;
+	height: 100px;
+}
+
+.contrib {
+	width: 200%;
+	height: 40px;
+    background-color: #A9A9A9;
+}
+
+.storyEdit {
+	display: none;
+}
+
+span.Class_0 {
+	background-color: #A9A9A9;
+}
+span.Class_1 {
+	background-color: #ea1919;
+}
+span.Class_2 {
+	background-color: #A6A6A6;
+}
+/* ===========================
+   ======== Sidebar ==========
+   =========================== */
+
+.top-sidebar {
+	width: 24%;
+	float: left;
+	margin-left: 2%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #FFF;
+	padding: 2% 3%;
+	margin-bottom: 2%;
+}
+
+.middle-sidebar {
+	width: 24%;
+	float: left;
+	margin-left: 2%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #FFF;
+	padding: 2% 3%;
+	margin-bottom: 2%;
+}
+
+.bottom-sidebar {
+	width: 24%;
+	float: left;
+	margin-left: 2%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #FFF;
+	padding: 2% 3%;
+}
+
+
+
+/* ===========================
+   ========= Footer ==========
+   =========================== */
+
+.mainFooter {
+	width: 100%;
+	float: left;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding-left: 0;
+	background-color: #666;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color: #FFF;
+}
+
+.mainFooter p {
+	width: 91%;
+	margin: 2% auto;
+}
+
+/* ===========================
+   ====== Media Queries ======
+   =========================== */
+
+@media only screen and (min-width : 150px) and (max-width : 780px)
+{
+	.body {
+		clear: both;
+		margin: 0 auto;
+		width: 90%;
+		font-size: 90%;
+	}
+
+	.mainHeader nav {
+		background: #666;
+		font-size: 1.143em;
+		height: 160px;
+		line-height: 30px;
+		margin-bottom: 0;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+
+	.mainHeader nav ul {
+		list-style: none;
+		margin: 0 auto;
+		padding-left: 0;
+	}
+
+	.mainHeader nav li {
+		margin-left: 0 auto;
+		width: 100%;
+	}
+
+	.mainHeader nav a:link, .mainHeader nav a:visited {
+		color: #FFF;
+		display: block;
+		height: 30px;
+		padding: 5px 0;
+		text-decoration: none;
+	}
+
+	.mainHeader nav a:active,
+	.mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+		background: #CF5C3F;
+		color: #fff;
+		text-shadow: none !important;
+	}
+
+	.mainHeader nav li a {
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+
+	.mainHeader img {
+		width: 100%;
+		height: auto;
+		margin-bottom: 3%;
+	}
+
+	.mainContent {
+		overflow: hidden;
+		line-height: 25px;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		margin-top: 4%;
+		margin-bottom: 2%;
+	}
+
+	.topcontent {
+		background-color: #FFF;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		padding: 2% 5%;
+		margin-bottom: 4%;
+	}
+
+	.bottomcontent {
+		background-color: #FFF;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		padding: 2% 5%;
+	}
+
+	.content {
+		width: 100%;
+		float: left;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+
+	.post-info {
+		display: none;
+	}
+
+	.top-sidebar {
+		width: 86%;
+		float: left;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		background-color: #FFF;
+		margin-top: 4%;
+		margin-left: 0;
+		padding: 0 7%;
+		margin-bottom: 0;
+	}
+
+	.top-sidebar p {
+		width: 90%;
+	}
+
+	.middle-sidebar {
+		width: 86%;
+		float: left;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		background-color: #FFF;
+		margin-top: 4%;
+		margin-left: 0;
+		padding: 0 7%;
+		margin-bottom: 0;
+	}
+
+	.middle-sidebar p {
+		width: 90%;
+	}
+
+	.bottom-sidebar {
+		width: 86%;
+		float: left;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		background-color: #FFF;
+		margin-top: 4%;
+		margin-left: 0%;
+		padding: 0 7%;
+		margin-bottom: 1%;
+	}
+
+	.bottom-sidebar p {
+		width: 90%;
+	}
+
+	.mainFooter {
+		width: 100%;
+		float: left;
+		margin: 2% 0;
+		padding-left: 0;
+		background-color: #666;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		color: #FFF;
+	}
+
+	.mainFooter p {
+		width: 86%;
+		margin: 2% auto;
+	}
+}

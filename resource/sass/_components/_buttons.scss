@@ -1,0 +1,76 @@
+/* BUTTONS */
+.btn {
+	border-width: 2px;
+	padding: 5px 18px;
+	border-radius: 8px;
+	font-family: $proxima-font-regular;
+	&.btn-info {
+		background: $info-color;
+		border-color: $info-color;
+		&:hover, &:focus {
+			background: darken($info-color, 10%);
+			border-color: darken($info-color, 10%);
+		}
+	}
+	&.btn-primary {
+		background: $primary-color;
+		border-color: $primary-color;
+		&:hover, &:focus {
+			background: darken($primary-color, 10%);
+			border-color: darken($primary-color, 10%);
+		}
+	}
+	&.btn-mutted {
+		background: $mercury;
+		border-color: $mercury;
+		color: $white;
+		&:hover, &:focus {
+			color: $white;
+			background: darken($mercury, 10%);
+			border-color: darken($mercury, 10%);
+		}
+	}
+	&.btn-outline {
+		background: transparent;
+	}
+	&.btn-outline-info {
+		border-color: $info-color;
+		color: $white;
+		&:hover, &:focus {
+			color: $white;
+			border-color: darken($info-color, 10%);
+			background: darken($info-color, 10%);
+		}
+	}
+	&.btn-mobile-block {
+		@include respond-to(xs) {
+			display: block;
+		}
+	}
+	&.btn-lg {
+		font-size: 16px;
+		padding: 10px 16px;
+		@include respond-to(xs) {
+			font-size: 14px;
+		}
+	}
+}
+
+.btn-scroll-down {
+	position: absolute;
+	font-size: 22px;
+	color: $white;
+	left: 50%;
+	bottom: 15px;
+	z-index: 900;
+	width: 22px;
+	height: 32px;
+	margin-left: -11px;
+}
+.btn-load-more {
+	margin-top: 40px;
+}
+
+
+
+

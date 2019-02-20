@@ -1,0 +1,163 @@
+/* FORMS */
+.form-control {
+	-webkit-appearance:none;
+	border-width: 2px;
+	border-radius: 8px;
+	box-shadow: none;
+	font-family: $proxima-font-regular;
+	@include custom-placeholder($color: $placeholder-color, $font-style: $placeholder-regular);
+	&:focus {
+		@include custom-placeholder-opacity($opacity: $placeholder-opacity);
+	}
+	&.input-mutted {
+		background: $mercury;
+	}
+	&.input-italic {
+		@include custom-placeholder($color: $placeholder-color, $font-style: $placeholder-italic);
+	}
+}
+
+.navbar-form {
+	margin-left: 18px;
+	padding: 0 10px;
+	@include respond-to(sm) {
+		margin-left: 8px;
+	}
+	@include respond-to(xs) {
+		margin-left: 0px;
+	}
+	&.full-width {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100%;
+		z-index: 100;
+		padding-right: 10px;
+		padding-left: 0;
+		margin-left: 0;
+		.form-control {
+			width: 100%;
+			position: absolute;
+			right: 0;
+			@include transition(50ms);
+			//border-color: $silver;
+		}
+		.form-group {
+			display: block;
+			height: 34px;
+		}
+	}
+	@include respond-to(xs) {
+		margin: 0;
+	}
+}
+
+.form-group-search {
+	position: relative;
+	.form-control {
+		background: $white;
+		padding-left: 30px;
+		width: 145px;
+		@include respond-to(sm) {
+			width: 90px;
+			//border-color: transparent;
+		}
+		@include respond-to(xs) {
+			width: 100%;
+			border-color: $mercury;
+		}	
+		// @include respond-to(xs) {
+		// 	width: 100%;
+		// }
+		// @include transition(350ms);
+		// &:focus {
+		// 	width: 400px;
+		// 	@include respond-to(md) {
+		// 		width: 340px;
+		// 	}
+		// 	@include respond-to(sm) {
+		// 		width: 145px;
+		// 	}
+		// 	@include respond-to(sm) {
+		// 		width: 100%;
+		// 	}
+		// }
+	}
+	.btn-submit {
+		position: absolute;
+		left: 5px;
+		top: 0;
+		height: 100%;
+		color: $gray;
+		@include respond-to(xs) {
+			left: 2px;
+		}
+	}
+}
+
+.form-group-lg {
+	margin-bottom: 35px;
+	@include respond-to(xs) {
+		margin-bottom: 20px;
+	}
+}
+
+.checkbox-holder {
+	padding: 10px 0;
+	@include respond-to(xs) {
+		padding: 0;
+	}
+	input {
+		display: none;
+	}
+	input + label {
+		font-weight: normal;
+		cursor: pointer;
+		padding-left: 40px;
+		position: relative;
+		margin-bottom: 0;
+		font-size: 20px;
+		font-family: $proxima-font-regular;
+		&:after {
+			font-family: 'FontAwesome';
+	    	display: inline-block;
+	    	position: absolute;
+	    	letter-spacing: 10px;
+	    	font-size: 18px;
+	    	vertical-align: middle;
+	    	left: 6px;
+	    	top: 2px;
+	    	content: "\f00c";
+			opacity: 0;
+			color: $info-color;
+		}
+		&:before {
+			content: '';
+			width: 30px;
+			height: 30px;
+			border-radius: 4px;
+			border: 2px solid $mercury;
+			background: $wild-sand; 
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			top: -1px;
+		}
+	}
+	input:checked + label {
+		&:after {
+			opacity: 1;
+		}
+	}
+}
+
+textarea {
+	resize: none;
+	min-height: 215px;
+}
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+/* MENU */
+
+.menu-holder {
+	@include clearfix();
+	float: right;
+	position: relative;
+	@include respond-to(xs) {
+		float: none;
+		@include transition(350ms);
+		position: fixed;
+		z-index: 900;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $white;
+		padding: 11px 15px;
+		opacity: 0;
+		visibility: hidden;
+	}
+	&.open {
+		opacity: 1;
+		visibility: visible;
+	}
+	.navbar-right {
+		margin-right: -8px;
+		@include respond-to(xs) {
+			margin: 0 -15px;
+		}
+	}
+	.navbar-form {
+		@include respond-to(xs) {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}	
+	}
+	.navbar-brand {
+		padding: 0;
+	}
+}
+
+.menu-header {
+	@include clearfix();
+	margin-bottom: 30px;
+	position: relative;
+}
+.btn-close-menu {
+	font-size: 30px;
+	color: $gray;
+	line-height: 26px;
+	position: absolute;
+	right: 0px;
+	top: -5px;
+	&:hover {
+		color: $link-color;
+	}
+}
+.btn-mobile-trigger {
+	float: right;
+	font-size: 21px;
+	padding: 1px 6px;
+	color: $white;
+	background: $info-color;
+	width: 30px;
+	height: 30px;
+	border-radius: 8px;
+	margin: 9px 0;
+	&:hover, &:focus {
+		color: $white;
+	}
+}
+
+

@@ -1,0 +1,243 @@
+/* LIST */
+
+.nav-page-list {
+	@extend .list-unstyled;
+	font-family: $proxima-font-regular;
+	>li {
+		display: inline-block;
+		margin-right: 40px;
+		&:last-child {
+			margin-right: 0;
+		}
+		>a {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			display: block;
+			border-bottom: 3px solid transparent;
+			&.active {
+				border-color: $info-color;
+			}
+			&:hover, &:focus {
+				border-color: rgba($info-color, .6);
+			}
+		}
+	}
+}
+
+
+.list-story {
+	@extend .list-unstyled;
+	font-family: $proxima-font-regular;
+	>li {
+		display: inline-block;
+		@include respond-to(xs-small) {
+			font-size: 12px;
+		}
+		&.mobile-block {
+			@include respond-to(xs) {
+				display: block;
+			}
+		}
+	}
+	.list-dotted {
+		height: 3px;
+		width: 3px;
+		border-radius: 50%;
+		margin: 0 4px;
+		background: $gray;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.list-story-social {
+	@extend .list-unstyled;
+	>li {
+		display: inline-block;
+		margin-right: 30px;
+		@include respond-to(sm) {
+			margin-right: 15px;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		>a {
+			margin-left: 5px;
+			display: inline-block;
+		}
+	}
+	&.list-aligned {
+		>li {
+			a {
+				padding: 7px 0;
+				@include respond-to(xs) {
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+
+.list-contributor {
+	@extend .list-unstyled;
+	>li {
+		vertical-align: top;
+		display: inline-block;
+		margin-right: 20px;
+		text-align: center;
+		min-width: 78px;
+		margin-bottom: 10px;
+		@include respond-to(sm) {
+			margin-right: 15px;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		small {
+			color: $danger-color;
+			display: block;
+		}
+		>a {
+			display: block;
+		}
+	}
+}
+
+.list-author-social {
+	@extend .list-unstyled;
+	>li {
+		display: inline-block;
+		margin-right: 14px;
+		&:last-child {
+			margin-right: 0;
+		}
+		>a {
+			font-size: 20px;
+		}
+	}
+	img {
+		width: 20px;
+		vertical-align: initial;
+		display: block;
+	}
+}
+
+.list-with-border {
+	border-left: 3px solid $gray;
+}
+
+.list {
+	>li {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+}
+
+.list-bullet {
+	@extend .list-unstyled;
+	>li {
+		padding-left: 14px;
+		position: relative;
+		&:before {
+			content: '';
+			height: 5px;
+			width: 5px;
+			border-radius: 50%;
+			background: $black;
+			vertical-align: middle;
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			margin-top: -2.5px;
+		}
+	}
+}
+
+.list-social-info {
+	margin-bottom: 0;
+	@extend .list-unstyled;
+	>li {
+		@include clearfix();
+		border-bottom: 1px solid $mercury;
+		padding: 7.5px 0;
+		&:last-child {
+			border: none;
+		}
+		&:not(.xs-full-width) {
+			@include respond-to(xs) {
+				border: none;
+			}
+		}
+		&.sm-full-width {
+			@include respond-to(sm) {
+				.social-info-left, .social-info-body {
+					float: none;
+					width: 100%;
+				}
+				.social-info-left {
+					margin-bottom: 10px;
+				}
+			}
+		}
+		&.xs-full-width {
+			@include respond-to(xs) {
+				display: block;
+				margin-right: 0;
+				.social-info-left, .social-info-body {
+					float: none;
+					width: 100%;
+				}
+				.social-info-left {
+					margin-bottom: 10px;
+				}
+				.social-info-body {
+					@include respond-to(xs) {
+						display: block;
+					}
+				}
+			}
+		}
+		@include respond-to(xs) {
+			display: inline-block;
+			margin-right: 15px;
+			vertical-align: middle;
+			padding: 10px 0;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	.social-info-left, .social-info-body {
+		float: left;
+	}
+	.social-info-left {
+		width: 35%;
+		@include respond-to(sm) {
+			width: 45%;
+		}
+		@include respond-to(xs) {
+			width: 100%;
+		}
+	}
+	.social-info-body {
+		width: 65%;
+		@include respond-to(sm) {
+			width: 55%;
+		}
+		@include respond-to(xs) {
+			display: none;
+		}
+	}
+	.list-contributor {
+		@include clearfix();
+		>li {
+			float: left;
+			margin-right: 0;
+			width: 33.33%;
+		}
+	}
+}
+
+
+

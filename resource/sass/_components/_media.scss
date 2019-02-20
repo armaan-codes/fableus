@@ -1,0 +1,76 @@
+/* MEDIA */
+
+.media {
+	&:last-child {
+		margin-bottom: 0;
+	}
+	p {
+		margin-bottom: 10px;
+	}
+}
+
+.media-heading {
+	font-size: 20px;
+	font-family:  $proxima-font-regular;
+}
+
+.media-card {
+	margin-bottom: 20px;
+	.media-left {
+		padding-right: 20px;
+	}
+	.media-body {
+		vertical-align: middle;
+	}
+	.media-object {
+		border-radius: 50%;
+		width: 36px;
+		height: 36px;
+	}
+}
+
+.media-author {
+	.media-left {
+		padding-right: 30px;
+		@include respond-to(xs) {
+			padding-right: 20px;
+		}
+	}
+	.media-body {
+		vertical-align: middle;
+	}
+	.media-object {
+		border-radius: 50%;
+		width: 80px;
+		height: 80px;
+		@include respond-to(xs) {
+			width: 63px;
+			height: 63px;
+		}
+	}
+}
+
+.media-social-info {
+	border-bottom: 1px solid $mercury;
+	.media-object {
+		width: 150px;
+	}
+	.list-contributor {
+		@include clearfix();
+		>li {
+			float: left;
+			margin-right: 0;
+			width: 33.33%;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+

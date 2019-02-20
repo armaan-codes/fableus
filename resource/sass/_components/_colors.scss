@@ -1,0 +1,51 @@
+/* COLORS */
+
+/* For color names was used site - http://chir.ag/projects/name-that-color */
+
+/************************* 
+	Main colors start
+*************************/
+/* White group */
+$white: #ffffff;
+/* Black group */
+$black: #000000;
+/* Gray group */
+$alabaster: #f9f9f9; //Body bg
+$silver: #cccccc;
+$wild-sand: #f5f5f5;
+$mercury: #e2e2e2;
+$gray: #939393;  //Main text color
+$scorpion: #585858;
+/* Blue group */
+$shakespeare: #529ecc;
+$dodger-blue: #4099ff; //Twitter-color
+$chambray: #3B5998; //Facebook color
+/* Red group */
+$amaranth: #E33954;
+/* Green group */
+$silver-tree: #5EBE8F;
+/* Orange group */
+$coral: #fb8754;
+$bouquet: #AA6DAA;
+/* Yellow group */
+$sunglow: #ffbe32;
+/************************* 
+	Main colors end
+*************************/
+
+/************************* 
+	Local colors start
+*************************/
+$info-color: $shakespeare;
+$primary-color: $dodger-blue;
+$muttet-color-boulder: $scorpion;
+$main-text-color: $gray;
+$danger-color: $amaranth;
+$success-color: $silver-tree;
+$warning-color: $coral;
+$pink-color: $bouquet;
+$yellow-color: $sunglow;
+
+/************************* 
+	Local colors end
+*************************/

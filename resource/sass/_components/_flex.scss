@@ -1,0 +1,14 @@
+/* FLEX */
+
+.flex-holder {
+	display: flex;
+	align-items: center;
+}
+.row-flex {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	@include respond-to(xs) {
+		display: block;
+	}
+}

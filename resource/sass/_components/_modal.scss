@@ -1,0 +1,61 @@
+/* MODAL */
+
+.modal {
+	.line-behind {
+		margin: 50px 0;
+		@include respond-to(xs) {
+			margin: 20px 0;
+		}
+	}
+	.close {
+		font-size: 30px;
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		color: $gray;
+		opacity: 1;
+		&:hover {
+			color: $link-color;
+		}
+	}
+}
+
+.modal-backdrop {
+	background: rgba($white, .95);
+	&.in {
+		opacity: 1;
+	}
+}
+
+#sign-modal {
+	.modal-content {
+		box-shadow: none;
+		border: none;
+		background: transparent;
+	}
+	.modal-header {
+		text-align: center;
+		border: none;
+	}
+	.modal-dialog {
+	    margin: 8% auto;
+	    @include respond-to(xs) {
+	    	margin: 30px auto;
+	    }
+	}
+}
+.modal-logo {
+	width: 225px;
+	display: block;
+	margin: 0 auto 40px auto;
+	@include respond-to(xs) {
+		margin-bottom: 20px;
+	}
+}
+
+.modal-lg {
+	width: 760px;
+	@include respond-to(xs) {
+		width: auto;
+	}
+}

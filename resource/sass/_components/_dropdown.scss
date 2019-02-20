@@ -1,0 +1,39 @@
+/* DROPDOWN */
+
+
+.dropdown {
+	&.dropdown-content {
+		display: inline-block;
+		>a {
+			font-size: 16px;
+			font-family: $proxima-font-regular;
+			color: $black;
+			padding-right: 20px;
+			.icon {
+				margin-top: 3px;
+				float: right;
+			}
+		}
+		>.dropdown-menu {
+			margin-top: 10px;
+			border-radius: 0;
+		}
+	}
+}
+
+.dropdown-menu {
+	border-radius: 0;
+	>li {
+		>a {
+			font-size: 16px;
+			@include respond-to(xs) {
+				font-size: 14px;
+			}
+			font-family: $proxima-font-regular;
+			color: $info-color;
+			&:hover, &:focus {
+				color: $info-color;
+			}
+		}
+	}
+}

@@ -1,0 +1,44 @@
+/* FOOTER */
+footer {
+	@include respond-to(xs) {
+		font-size: 12px;
+	}
+}
+.footer-inner {
+	border-top: 1px solid $gray;
+	padding: 20px 0;
+}
+
+.footer-nav {
+	@extend .list-unstyled;
+	float: right;
+	font-family: $proxima-font-regular;
+	text-transform: uppercase;
+	@include respond-to(xs) {
+		float: none;
+		text-align: center;
+	}
+	>li {
+		display: inline-block;
+		margin-right: 45px;
+		@include respond-to(sm) {
+			margin-right: 20px;
+		}
+		@include respond-to(xs) {
+			margin-right: 30px;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		>a {
+			display: inline-block;
+			color: $gray;
+			@include respond-to(xs) {
+				padding: 5px 0;
+			}
+			&:hover, &:focus {
+				color: $link-color;
+			}
+		}
+	}
+}
