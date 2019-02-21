@@ -59,8 +59,6 @@ define('MAIL_BOX_API', 'fb53b71e427ca5fbebade1c09fbcc65f');
 
 define('REFRESH_TIME', 300000);
 
-define('SENDGRID_API_KEY', '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');
-
 define('BEST_STORIES', '3');
 
 ?>
